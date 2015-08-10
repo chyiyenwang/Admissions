@@ -3,32 +3,55 @@
 	<head>
 		<link type="text/css" rel="stylesheet" href="stylesheet.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
     <title>Admissions</title>
 	</head>
 
 	<body>
 		<header>
 			<img src='background/Bio.jpg'>
-			<h1>Chyi Wang</h1>
-        <ul>
+			<h1>{Chyi Wang}</h1>
+        <ul id="links">
           <li><a href="#me">About Me</a></li>
-          <li><a href="#blah">Blah</a></li>
+          <li><a href="#favorite">Fav 5</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
 		</header>
 
-		<article>
-			<p id="me">About me</P>
+		<article id="me">
+			<p>Hello, my name is Chyi and I'm applying to General Assembly because I love to code!  I recently discovered my passion for coding while at work. I grew tired of doing the same redundant tasks so I decided to learn how to automate my work by writing a script.</p>
+
+      <p>What I've come to love most about programming is how I'll never get bored unless I want to, there's always something new to learn. When I code I feel like I'm solving a conceptualized puzzle and I find that challenging and fun.</p>
+
+      <p>When I'm not teaching myself to code I play my fair share of boardgames, try new restaurants around Seattle, play tennis, ping pong, and travel. I've been lucky enough to see a lot of North America while on tour with my band back in the day and I hope to make it to Europe sometime next year.</p>
+
+      <p>I'm incredibly persistent and self-motivated. I'm very excited at the prospect of attending General Assembly and feel I have what it takes to be a successful student. I believe in the success of the curriculum as well as the programs investment with each students success.</p>
 		</article>
-    <article>
-      <p id="blah">paragraph blah</p>
+
+    <article id="favorite">
+      <p>5 Things I couldn't do without:</p>
+      <ul>
+        <li>Sriracha</li>
+        <li>Futurama</li>
+        <li>Nutella</li>
+        <li>Hot Wings</li>
+        <li>Naps</li>
+      </ul>
     </article>
-    <article>
-      <p id="contact">paragraph contact</p>
+
+    <article id="contact">
+      <a href="https://github.com/chyiyenwang"><img src="Images/github-32.png"></a>
+      <a href="https://www.linkedin.com/in/chyiyenwang"><img src="Images/linkedin-32.png"></a>
+      <a href="mailto:chyiyenwang@gmail.com"><img src="Images/gmail-32.png"></a>
     </article>
 
     <script>
-      $("li").
+      // Tried to get functionality to slide in the text after clicking on a link, but could not get the text to appear without clicking on the list item twice.
+      // $("#links").click(function() {
+      //   $("article").slideToggle("slow");
+      // });
     </script>
 	</body>
 </html>
